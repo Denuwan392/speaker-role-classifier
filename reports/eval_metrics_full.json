@@ -1,0 +1,43 @@
+{
+  "classification_report": {
+    "junior": {
+      "precision": 0.8333333333333334,
+      "recall": 0.9090909090909091,
+      "f1-score": 0.8695652173913043,
+      "support": 11.0
+    },
+    "manager": {
+      "precision": 0.7692307692307693,
+      "recall": 1.0,
+      "f1-score": 0.8695652173913043,
+      "support": 10.0
+    },
+    "other": {
+      "precision": 0.96875,
+      "recall": 0.8611111111111112,
+      "f1-score": 0.9117647058823529,
+      "support": 36.0
+    },
+    "accuracy": 0.8947368421052632,
+    "macro avg": {
+      "precision": 0.8571047008547009,
+      "recall": 0.9234006734006734,
+      "f1-score": 0.8836317135549873,
+      "support": 57.0
+    },
+    "weighted avg": {
+      "precision": 0.9076135852451643,
+      "recall": 0.8947368421052632,
+      "f1-score": 0.8962175259119666,
+      "support": 57.0
+    }
+  },
+  "macro_f1": 0.8836317135549873,
+  "n_test_samples": 57,
+  "n_meetings_test": 17,
+  "classes": [
+    "junior",
+    "manager",
+    "other"
+  ]
+}

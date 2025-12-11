@@ -1,0 +1,2266 @@
+[
+  {
+    "meeting_id": "scrum_001",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning everyone. Let’s keep it quick—what did you do yesterday, and what’s the plan today?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I finished the auth middleware refactor. Today I’ll start on the rate-limiting feature. No blockers.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was out sick yesterday, so I’m catching up today. I’ll pick up the mobile API docs task. Um… actually, I’m not sure where those doc files live—can someone point me?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Sure, check the /docs/api folder in the monorepo. And feel better! Let me know if you’re stuck after looking.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I reviewed the two open PRs and left comments. Today I’m testing the caching layer changes. Build’s green now.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_002",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright team, quick stand-up. Who’s up first?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I worked on the payment webhook integration. Today I’ll add retry logic. Ran into an issue with the sandbox env—might need DevOps help.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was trying to write unit tests for the new form validation, but I keep getting weird mocks errors. Not sure if I’m setting up Jest right...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Okay, I’ll pair with you after stand-up. Also, DevOps has a ticket open—ping them on Slack and CC me.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I merged the profile image upload fix. Working on the analytics dashboard today. No blockers.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_003",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Let’s go. Keep updates tight—we’ve got a demo tomorrow.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I polished the onboarding flow UI. Today I’ll hook it up to the backend endpoints. Waiting on that CORS fix from DevOps though.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I tried to deploy my branch but the CI pipeline failed on linting. I fixed the errors locally but it’s still failing remotely. Kind of confused...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Check your .eslintrc—there’s a team-wide rule update. I’ll send you the PR link. And DevOps is prioritizing the CORS fix today.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Wrapped up the data export feature. Sent a PR—could use a review by EOD if possible.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_004",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Let’s hear updates and blockers.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I debugged the memory leak in the job queue. Today I’ll implement the fix and add monitoring. No blockers.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m working on the user search filter. I think I’m close, but the Elasticsearch query isn’t returning expected results. Can someone review my query syntax later?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Absolutely—tag me on your draft PR. Also, we’ll do a quick query debugging session after lunch.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I updated the localization strings and tested RTL layout. Moving to accessibility checks next.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_005",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Quick sync. What’s everyone working on?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Finished the OAuth2 migration. Today I’m writing docs for the internal wiki. PR’s merged.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I started the task to add dark mode toggle, but I’m not sure how to structure the theme provider without breaking SSR...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Good question—let’s use the context + lazy hydration pattern we used in the settings page. I’ll share the file path.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Testing the notification service edge cases. Found one race condition—I’ll file a ticket and patch it today.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_006",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright team, stand-up time. Keep it under two minutes each.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I optimized the database indexes for the reporting module. Today I’ll monitor query performance in staging.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to fix the CI timeout on the E2E tests, but I don’t understand why it passes locally and fails in the runner...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Check the test timeout config—staging has slower I/O. Also, make sure you’re not mocking time inconsistently. Pair with me after this?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Completed the user role permission audit. Ready for QA sign-off.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_007",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Any urgent blockers before we dive in?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "No blockers. Yesterday I added retry logic to the email service. Today I’ll write integration tests.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was assigned the bug where the modal doesn’t close on mobile. I think it’s a z-index issue, but I’m not 100% sure how to test on real devices...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use BrowserStack—we have a license. I’ll send you the login. And yes, likely z-index—compare with the header component.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I’m reviewing security headers for the new microservice. Should have a PR by noon.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_008",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Let’s get started. What did you accomplish yesterday?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Deployed the feature flag system to prod. Monitoring metrics today. All green so far.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I worked on the user avatar upload component. It works, but I’m getting a weird console error about image encoding. Not sure if it’s critical...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Likely related to EXIF data—log a ticket and tag frontend infra. Don’t ship with unhandled errors.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I finished the GraphQL schema for the new inventory module. Waiting on API design review.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_009",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Quick stand-up. Focus on blockers—we’re in the final week of the sprint.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I wrapped up the audit logging feature. PR is ready—would appreciate a review today.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ve been stuck on the timezone conversion bug. Tried three approaches, but the test still fails for edge cases like DST...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use the date-fns-tz library—we standardized on it last quarter. I’ll send you the internal guide. Don’t roll your own timezone logic.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Refactored the error boundary component. Added Sentry integration. No issues.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_010",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Last stand-up before release. Confirm your tickets are done or blocked.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My config validation PR was merged. Verified in staging—good to go.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I finished the tooltip accessibility fix! But I’m not sure if I wrote the ARIA labels correctly. Can someone double-check?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Great work! Tag our a11y champion on the PR—they’ll review. And yes, always validate with screen readers before merging.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Load tested the new search API. Scales to 10k RPM. Ready for release.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_011",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Morning, team. Quick updates. Sam, go first." },
+      { "speaker_id": "spk_2", "role": "other", "text": "Yesterday I finished the API refactor. Today I’ll write tests. No blockers." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday I tried integrating the new auth flow. I'm stuck on a token refresh issue. Can someone check my PR?" },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Yeah, I’ll review it right after stand-up. If needed we can pair this afternoon." },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday I debugged the caching bug. Today I'll push a fix. Need a quick review later." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Cool. No major blockers then. Let’s keep moving." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_012",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Alright, updates. Junior first today." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday I worked on the UI validations. Today I’ll finish the error states. My test snapshot keeps failing and I don’t know why." },
+      { "speaker_id": "spk_2", "role": "other", "text": "I can help after lunch. Could be a stale mock." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Yep, pair with Jamie on that. Next?" },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday wrapped up the logging improvements. Today starting metrics instrumentation. No blockers." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Good. My plan is to finalize the sprint goals after this. Ping me if anything comes up." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_013",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Let’s keep it tight. Updates?" },
+      { "speaker_id": "spk_2", "role": "other", "text": "Yesterday I reviewed two PRs. Today I’ll continue the billing integration. No blockers." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday I learned how to write the migration. Today I’ll run it in staging. But I'm unsure about one column default." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Send me the snippet. I'll confirm before you run it." },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday checked load test results. Today tweaking configs. Might need a quick sanity check later." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Sure. Looks fine overall. Keep going." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_014",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Let’s start with blockers today. Anyone stuck?" },
+      { "speaker_id": "spk_3", "role": "junior", "text": "My build keeps failing after pulling main. I think it's a dependency mismatch." },
+      { "speaker_id": "spk_2", "role": "other", "text": "I saw something similar. I’ll help right after stand-up." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Good. Updates otherwise?" },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday moved the feature flags. Today enabling them per environment. No blockers." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Alright team, let’s keep momentum." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_015",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Morning, all. Junior, your update?" },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday I tried writing the unit tests for the webhook handler. I'm not confident about the mocks. Today I’ll redo them." },
+      { "speaker_id": "spk_2", "role": "other", "text": "I can show you a pattern we use in payments. Might help simplify." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Pair for 15 minutes after this. Next?" },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday I updated analytics dashboards. Today working on drill-down filters. No blockers." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Great. I’ll focus on the release checklist today." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_016",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Alright, let’s start. Any urgent blockers?" },
+      { "speaker_id": "spk_4", "role": "other", "text": "My PR needs a second review before merging. Not urgent though." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "I’ll take it." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday I refactored the form component. Today finishing validation. I'm confused about the schema rules." },
+      { "speaker_id": "spk_2", "role": "other", "text": "I can walk you through the shared schema after stand-up." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Perfect. Anything else?" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_017",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Let’s do updates. Start with seniors today." },
+      { "speaker_id": "spk_2", "role": "other", "text": "Yesterday handled deployment tweaks. Today investigating a slow endpoint. No blockers." },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday improved search indexing. Today tuning relevance. Need a quick review later." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday I tried fixing the dropdown bug. I think I introduced another UI glitch. Today I’ll debug with guidance." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "No worries. Pair with Taylor. Let’s keep things moving." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_018",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Happy mid-week. Quick sync. Junior, you go first." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday set up the new feature branch. Today implementing the modal. Unsure about the design spec." },
+      { "speaker_id": "spk_4", "role": "other", "text": "I’ll walk you through the spec after this. It’s simpler than it looks." },
+      { "speaker_id": "spk_2", "role": "other", "text": "Yesterday finished Docker optimizations. Today testing memory usage. No blockers." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Great. I’ll prep for the stakeholder demo today." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_019",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Let’s start. Anyone blocked?" },
+      { "speaker_id": "spk_2", "role": "other", "text": "No blockers. Yesterday wrapped feature toggle logic. Today cleaning up tests." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "I’m stuck on a failing integration test. Not sure if it's my code or the test itself." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Bring it to me after stand-up. We'll walk through logs." },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday finished performance profiling. Today adjusting DB indexes. No blockers." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Cool. Let’s stay on track for Friday’s milestone." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_020",
+    "segments": [
+      { "speaker_id": "spk_1", "role": "manager", "text": "Final stand-up of the week. Updates?" },
+      { "speaker_id": "spk_4", "role": "other", "text": "Yesterday merged the audit logging work. Today writing docs. No blockers." },
+      { "speaker_id": "spk_2", "role": "other", "text": "Yesterday reviewed two PRs. Today pairing on the search fix. No blockers." },
+      { "speaker_id": "spk_3", "role": "junior", "text": "Yesterday continued learning the testing framework. Today I’ll write my first end-to-end test. Might need help if I get stuck." },
+      { "speaker_id": "spk_1", "role": "manager", "text": "Good. Ping any of us if you hit issues. Let’s wrap and finish strong today." }
+    ]
+  },
+  {
+    "meeting_id": "scrum_021",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright team, let’s kick off. What’s everyone working on today?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I debugged the Kafka consumer lag. Today I’ll add metrics to track backpressure. No blockers.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m setting up the dev environment for the new microservice, but Docker Compose keeps failing on the Redis step. I’ve checked the docs twice...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Ah, there’s a version mismatch—use Redis 7.2, not 7.0. The README hasn’t been updated yet. I’ll fix that today.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I completed the user feedback form backend. Just waiting on the frontend PR to link it.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_022",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Any critical issues before we start?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I pushed a hotfix for the checkout timeout bug. It’s in prod now. Today I’ll add a regression test.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to write a test for a React hook that uses localStorage, but I can’t mock it properly in Jest...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use the msw library for storage mocking—we have an example in the shared test utils. I’ll link it.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Refactoring the logging middleware to support structured JSON. Halfway done.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_023",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Let’s keep this tight—we’ve got a security audit tomorrow.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Audited all third-party dependencies yesterday. Removed two deprecated packages. Today I’ll update the SBOM.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was asked to add input sanitization to the comment form, but I’m not sure which library we’re supposed to use—DOMPurify or our internal sanitizer?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use the internal one—it’s already integrated with our CSP. Check the utils/sanitize module.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Updated TLS config across all staging services. Verified with SSL Labs—A+ rating.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_024",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Stand-up time. Let’s hear updates.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Integrated the new payment gateway SDK. Today I’ll handle webhook signature validation.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "My local database seed script keeps timing out. I increased the timeout, but it still fails. Not sure what’s wrong with Postgres locally...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Check if you have the latest docker-compose.override.yml—it sets resource limits. Also, run ‘make db-reset’ before seeding.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Fixed the flaky Cypress test in the onboarding flow. Now it passes consistently.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_025",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Good morning. Sprint’s halfway—any scope risks?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The image optimization pipeline is taking longer than expected. Might need to defer the WebP fallback to next sprint.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I started the password strength meter task. I found an npm package, but I don’t know if we’re allowed to add new deps...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Avoid new deps for UI utilities—we have a custom one in /libs. Use that. And yeah, let’s move WebP to next sprint if needed.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Added rate limiting to the auth endpoints. Tested under load—works as expected.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_026",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Quick sync. Any urgent help needed?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I containerized the legacy Python service. Today I’ll test it in the QA cluster.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to understand how the feature flag system works. The docs mention ‘variants,’ but I can’t find where they’re defined...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Variants are in LaunchDarkly—check the ‘user-onboarding’ flag. I’ll grant you read access and walk you through it after stand-up.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Migrated cron jobs from Jenkins to GitHub Actions. All green.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_027",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Let’s go. Focus on blockers.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Finished the GraphQL resolver for user roles. Sent PR—needs review.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m working on the CSV export button, but when I click it, nothing happens. The onClick handler is there, but no network call...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Check the browser console for errors. Also, ensure you’re calling the correct API route—there are two similar ones.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Updated the OpenAPI spec for the new endpoints. Synced with frontend.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_028",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. What’s the status on high-priority tickets?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Fixed the Safari layout shift bug. Verified on BrowserStack. PR merged.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to add a new endpoint to the API gateway, but I keep getting 403s. I copied the config from another route though...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Did you update the IAM policy in Terraform? Gateway routes need explicit permissions. Check the authz module.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Reduced bundle size by 18% with code splitting. Live in canary.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_029",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Stand-up time. Keep it brief.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I implemented idempotency keys for payment retries. Today I’ll add client-side handling.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m writing docs for the new CLI tool, but I’m not sure what the ‘--verbose’ flag actually does—it’s not in the code comments...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "It dumps debug logs to stderr. I’ll add a comment to the parser. Good catch—docs should reflect behavior.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Upgraded Node.js to v20 in all services. Passed integration tests.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_030",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright, let’s hear what everyone’s up to.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Deployed the new caching layer to EU region. Monitoring hit ratio.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I tried to run the e2e tests locally, but they require a test database, and I don’t know how to spin one up...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Run ‘npm run test:e2e:setup’—it starts a temp DB in Docker. We’ll add that to onboarding docs today.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Fixed a race condition in the inventory sync job. Added mutex locks.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_031",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning team. Any showstoppers?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Refactored the notification templates into a shared library. PR ready.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m adding unit tests to the utils folder, but I don’t understand why the ‘formatDate’ function has a special case for ‘en-GB’...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "That’s for EU compliance—dates must be DD/MM. Keep the logic, but add a comment explaining why.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Integrated Sentry for backend error tracking. Now capturing all 5xx errors.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_032",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Let’s sync quickly. What’s your focus today?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Working on the SSO SAML integration. Got the handshake working—now handling attribute mapping.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m stuck on a merge conflict in package-lock.json. I resolved it, but now npm install fails with duplicate packages...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Delete node_modules and package-lock.json, then run ‘npm install’ fresh. Never hand-edit the lockfile.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Optimized DB queries for the user dashboard. Reduced latency by 40%.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_033",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Stand-up. Remember—we’re targeting Thursday deploy.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Completed the dark theme toggle. Verified with a11y tools. Ready for QA.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was asked to add a tooltip to the ‘?’ icon, but when I hover, it flashes and disappears. I think it’s a CSS z-index issue...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Check if you’re using the shared Tooltip component—it handles focus and z-index correctly. Don’t roll your own.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Added health checks to all internal services. Kubernetes is now auto-restarting failed pods.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_034",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Good morning. Any blockers?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I migrated the config from env vars to Consul. Today I’ll update the deployment scripts.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to debug why the CI build is slow, but I can’t find the build logs for the test step—they’re truncated...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "CI only shows the last 10k lines. Run the build locally with ‘--verbose’ or check the raw log in S3—link is in the build summary.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Upgraded React to 18.3. All tests pass.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_035",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Let’s keep this under five minutes.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Fixed the memory leak in the WebSocket handler. Verified with heap snapshots.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m writing a script to backfill user tags, but I’m not sure if I should run it against production or a snapshot first...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Always test on a prod snapshot first. Use the ‘db-snapshot-2025-06-10’ dataset. I’ll approve the prod run after validation.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Added OpenTelemetry tracing to all HTTP clients. Traces now appear in Jaeger.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_036",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Any urgent issues?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Completed the GDPR data export endpoint. Passed legal review.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I tried to deploy my branch, but ArgoCD says ‘sync failed’ with no details. Where do I find more logs?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Click the ‘Pod Logs’ tab in ArgoCD or run ‘kubectl logs -n apps’ with your pod name. Also, check if your image tag exists in ECR.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Refactored error codes to be consistent across services. Updated the error handbook.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_037",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Quick stand-up. What’s your top priority today?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Implementing retry with exponential backoff for the third-party API calls.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m adding a new validation rule to the sign-up form, but the error message doesn’t show up. The form uses Formik—I think I’m missing something...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Make sure your validate function returns an object with the field name as key. Compare with the email validation example.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Set up synthetic monitoring for critical user journeys. Alerts are active.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_038",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright team, what’s new?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I reduced the Docker image size by switching to distroless. Saved 300MB per image.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to understand how the CI pipeline chooses which tests to run. My PR only changed a README, but it ran all backend tests...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "The path-based trigger is broken—we’re fixing it today. For now, it’s running full suite on any change. Sorry for the noise.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Added automated dependency updates via Renovate. First PRs are coming in.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_039",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Let’s focus on release readiness.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Finished the mobile responsive refactor for the dashboard. Tested on all device sizes.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was asked to add a loading spinner during API calls, but I’m not sure where to put it—on the button or the whole form?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use the whole form—users should know the entire action is pending. Check the shared LoadingOverlay component.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Backfilled missing audit logs for user deletions. Script completed successfully.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_040",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Last stand-up of the sprint. Confirm your tasks are done or explain delays.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Completed all my tickets. Started tech debt cleanup on the auth module.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I finished the profile picture upload! But I’m not sure if I handled the error case when the image is too big...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Good instinct—add a client-side size check before upload. Use MAX_FILE_SIZE from constants.js.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Documented all new APIs in Swagger. Ready for release review.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_041",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Good morning. Quick round — any urgent blockers?", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "Yesterday I wrapped the pagination API. Today starting infinite scroll. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "I tried wiring the filter panel yesterday. Today I’ll fix a weird state bug. Kinda unsure why it resets randomly.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "Worked on the alerts config yesterday. Today pushing PR. Need review later.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, send me your branch — I’ll help debug after stand-up.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_042",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Alright team, quick updates. Start with backend.", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Finished the rate limit logic yesterday. Today validating edge cases. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I tried fixing the modal animation. Not sure why it stutters. Today I’ll try a simpler approach.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "Reviewed two PRs yesterday. Today migrating configs. No blockers.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, pair with Alex this afternoon. Don't spend too long stuck.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_043",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Let’s do blockers first.", "role": "manager" },
+      { "speaker_id": "spk_3", "text": "My test suite is failing randomly. I don’t know which mock is wrong.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "I can help triage after lunch.", "role": "other" },
+      { "speaker_id": "spk_4", "text": "Yesterday wrapped the signup funnel changes. Today writing metrics. No blockers.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Great, junior — send me logs. We’ll unblock you.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_044",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Morning all. Updates?", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "Yesterday handled deployment rollback. Today stabilizing CI. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I tried implementing the tooltip logic. Today debugging RTL issues. Not sure I'm doing it right.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "Yesterday refined the data pipeline. Today testing throughput. Need review later.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, let me know if you need pairing — RTL is tricky.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_045",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Let’s keep it short today. Backend first.", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Worked on DB cleanup yesterday. Today removing unused indexes. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I tried fixing the validator. Still failing on edge cases. Today reviewing docs again.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "Finished dashboard graphs yesterday. Today updating queries. No blockers.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, loop me in if it blocks progress. We can simplify the validator.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_046",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Anyone stuck before we do updates?", "role": "manager" },
+      { "speaker_id": "spk_3", "text": "My environment crashed after package updates. Not sure what I broke.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "I’ll help you reset it after stand-up.", "role": "other" },
+      { "speaker_id": "spk_4", "text": "Yesterday built the notifications batch job. Today reviewing error handling. No blockers.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Good. Junior, don’t worry — happens to all of us.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_047",
+    "segments": [
+      { "speaker_id":"spk_1", "text":"Status updates — front-end first.","role":"manager"},
+      { "speaker_id":"spk_3","text":"Yesterday I explored the new layout system. Today I’ll try wiring it. Might need help if breakpoints misbehave.","role":"junior"},
+      { "speaker_id":"spk_2","text":"Yesterday finished some code quality fixes. Today reviewing open PRs.","role":"other"},
+      { "speaker_id":"spk_4","text":"Yesterday tested edge-case flows. Today updating error banners.","role":"other"},
+      { "speaker_id":"spk_1","text":"Junior, pair with Chris later — he handled breakpoints last sprint.","role":"manager"}
+    ]
+  },
+  {
+    "meeting_id": "scrum_048",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Midweek sync — keep it fast.", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "I wrapped search filtering yesterday. Today adding synonyms. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I tried optimizing my loop but broke the output. Today I’ll retry with logging on.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "Checked S3 migration yesterday. Today verifying permissions.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, push your branch. I’ll check the failing logic.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_049",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Let’s start with any issues blocking sprint goals.", "role": "manager" },
+      { "speaker_id": "spk_3", "text": "Still confused about the batch request spec. I think I implemented it wrong.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "I can walk you through it after lunch.", "role": "other" },
+      { "speaker_id": "spk_2", "text": "Finished metrics tagging yesterday. Today testing alerts. No blockers.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Good — let’s unblock junior quickly.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_050",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Morning team. Updates?", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "Yesterday reviewed retry logic. Today implementing fallback. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday tried styling the new banner. Today fixing overflow. Unsure which CSS variable to use.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "I’ll show you where it's defined. Two-minute fix.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Great. Keep the sprint clean.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_051",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Start with backend today.", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Finished schema updates yesterday. Today writing migration tests. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "I tried the new hook yesterday. Today I’ll fix dependency errors. I'm not sure about the order.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "Yesterday looked at flaky tests. Today monitoring CI. No blockers.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, share the hook example — I’ll clarify it.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_052",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Short sync — let’s roll.", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "Yesterday optimized caching. Today measuring latency. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "I tried connecting to staging yesterday. Today retrying because I hit a permission error.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "Finished user settings yesterday. Today wiring preferences API.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, I’ll fix permissions with DevOps.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_053",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Let's start with risks. Anything concerning?", "role": "manager" },
+      { "speaker_id": "spk_3", "text": "My feature branch diverged too much. Merge conflicts everywhere.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "I’ll help resolve the conflicts later.", "role": "other" },
+      { "speaker_id": "spk_4", "text": "Yesterday tuned the cron schedule. Today checking logs.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Alright — let’s stabilize branches today.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_054",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Progress updates, please.", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Finished auto-scaling config. Today validating thresholds.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I worked on dropdown behavior. Today I’ll test keyboard nav. Might need help with focus traps.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "Reviewed three PRs yesterday. Today cleaning unused code.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, pair with UX engineer later for accessibility.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_055",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Any blockers before updates?", "role": "manager" },
+      { "speaker_id": "spk_3", "text": "My test coverage job won’t run locally. Not sure how to debug it.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "I can show you the test runner flags.", "role": "other" },
+      { "speaker_id": "spk_2", "text": "Yesterday I refactored auth logic. Today documenting flows.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Alright — get junior sorted quickly.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_056",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Let’s keep it efficient. Updates?", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "Yesterday finalized the map widget. Today optimizing markers. No blockers.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I tried new lint rules. Today fixing warnings. Still confused on two of them.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "Yesterday cleaned up infra scripts. Today improving logs.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, send me the warnings. I’ll explain them.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_057",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Do we have any sprint risks?", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Maybe minor — the new queue worker is slower than expected. Investigating.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "I’m still trying to understand the worker config. Might need someone to explain it.", "role": "junior" },
+      { "speaker_id": "spk_2", "text": "Yesterday fixed minor API bugs. Today reviewing load tests.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Let’s do a worker deep-dive after lunch.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_058",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Morning — backend first today.", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Yesterday validated webhook retries. Today testing exponential backoff.", "role": "other" },
+      { "speaker_id": "spk_2", "text": "Yesterday cleaned stale branches. Today merging hotfix.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I tried integrating the date picker. Today fixing timezone issues. Very confusing.", "role": "junior" },
+      { "speaker_id": "spk_1", "text": "Junior, ping me — timezone logic is tricky but solvable.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_059",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "Let’s start with open PRs.", "role": "manager" },
+      { "speaker_id": "spk_2", "text": "Two PRs pending review. Yesterday added new query filters. Today cleaning tests.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "My PR needs guidance. I’m not sure I structured the component correctly.", "role": "junior" },
+      { "speaker_id": "spk_4", "text": "Yesterday wrote migration scripts. Today verifying data integrity.", "role": "other" },
+      { "speaker_id": "spk_1", "text": "Junior, I'll review with you live after stand-up.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_060",
+    "segments": [
+      { "speaker_id": "spk_1", "text": "End-of-week stand-up — keep it crisp.", "role": "manager" },
+      { "speaker_id": "spk_4", "text": "Wrapped multi-region testing yesterday. Today handling failover tests.", "role": "other" },
+      { "speaker_id": "spk_2", "text": "Yesterday handled cleanup tasks. Today reviewing pipeline configs.", "role": "other" },
+      { "speaker_id": "spk_3", "text": "Yesterday I studied error boundaries. Today adding them to checkout flow. Might break something.", "role": "junior" },
+      { "speaker_id": "spk_1", "text": "Push early and we’ll review together. Don’t wait until evening.", "role": "manager" }
+    ]
+  },
+  {
+    "meeting_id": "scrum_061",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. What’s everyone up to?",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I fixed the race condition in the cache invalidation. Today I’ll add a test to prevent regressions.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m debugging why the staging DB connection pool is maxing out. Suspect a leak in the new job worker.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_062",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright team, quick updates. Any blockers?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Finished the analytics event schema. Sent PR—needs review before EOD.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to set up local TLS for the dev API, but I keep getting cert errors. Not sure if it’s my config or the tooling...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use the mkcert setup in /scripts—don’t generate your own. I’ll send you the doc link.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_063",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I migrated the legacy config to env0. Today I’ll update the runbooks.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My E2E test suite passed locally but failed in CI. I think it’s a timezone issue—looking into it now.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_064",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Let’s keep it tight—we have a release today.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Verified all smoke tests in prod-canary. Green across the board.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was asked to add a tooltip to the export button, but the design spec doesn’t say what the text should be...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Ping product—they’ll confirm. Default to ‘Download as CSV’ for now.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Rolled back the faulty feature flag. Metrics normalized.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_065",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I completed the Redis cluster upgrade in staging. Monitoring for latency spikes.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Refactored the error boundary to log to Datadog. PR ready for review.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Trying to understand why my branch build is failing—the error says ‘missing artifact,’ but I didn’t change the pipeline...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Oh, the artifact name changed yesterday. Update your .gitlab-ci.yml to use ‘dist-v2’.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_066",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I implemented the new OAuth scope validation. Today I’ll test with the mobile team.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m optimizing the Nginx config for static assets. Caching headers are now aligned with best practices.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_067",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Stand-up time. Who’s got updates?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Fixed the flaky test in the user invite flow. Added explicit waits.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m working on the password reset flow, but I don’t know how to trigger the email in dev—do we have a mock?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Yes, use the /dev/email-preview endpoint. Docs are in Notion under ‘Auth Dev Guide.’",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Audited all IAM roles—removed two unused permissions.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_5",
+        "text": "Updated the frontend Dockerfile to multi-stage. Image size down by 60%.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_068",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m adding input validation to the admin API. Almost done—will send PR by noon.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My build failed because of a missing license header in a new file. Fixed and re-pushed.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_069",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Good morning. Any urgent issues before we dive in?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The S3 bucket policy update caused a 503 in the media service. Reverted and investigating.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to write a test for a debounced search input, but I can’t get the timing right in Jest...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use jest.useFakeTimers() and advance timers by the debounce delay. I’ll share a code snippet after stand-up.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_070",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Completed the Terraform module for the new VPC. PR reviewed and merged.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Upgraded the Kubernetes cluster to 1.29. All nodes healthy.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Added Prometheus metrics to the auth service. Grafana dashboard is live.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_071",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I worked on the checkout error tracking. Today I’ll correlate with Stripe logs.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m stuck on a merge conflict in a TypeScript file with generics. The diff is unreadable...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Use VS Code’s merge editor—it handles generics better. Or just accept one side and reapply your logic.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_072",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning. Let’s sync quickly.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Finished the user deletion GDPR compliance hook. Tested in EU sandbox.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I was asked to add a ‘last seen’ timestamp to profiles, but I’m not sure if we should store it in the main table or a separate activity log...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Use the activity log—it’s already indexed for time range queries. Don’t bloat the users table.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_073",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Refactored all API routes to use the new validation middleware. Zero runtime errors in canary.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Set up automated snapshot testing for the dashboard UI. Caught three visual regressions already.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_074",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I containerized the legacy Ruby script. Today I’ll add health checks.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My PR for the dark mode toggle is ready. Could use a review—especially on accessibility contrast.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to run the local dev server, but it says ‘missing .env.local’. I thought it was optional?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "It’s required now since the auth refactor. Copy .env.example and fill in the mock values.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_075",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I implemented idempotency keys for all POST endpoints. Docs updated.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Reduced bundle size by lazy-loading the settings module. Lighthouse score up by 12.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_076",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Stand-up time. Any blockers?",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The new logging format broke our Splunk parser. Working on a fix now.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m writing a script to anonymize user data for staging, but I’m not sure which fields are PII...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Check the data classification doc in the security repo. Email, phone, and IP are always PII.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Added circuit breaker to the third-party service client. Prevents cascading failures.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_077",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Fixed the Safari flexbox bug in the onboarding flow. Verified on real device.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My CI job keeps timing out on the integration test step. Locally it takes 90 seconds, but CI gives 60...",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_078",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Morning all. What’s new?",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Yesterday I added retry logic to the email delivery service. Today I’ll simulate failure modes.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to understand how the feature flag rollout percentage works. Is it per user or per request?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Per user—based on hashed user ID. So it’s consistent across sessions.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_079",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Completed the database migration for the new billing tables. Verified with sample data.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Updated all npm dependencies. No breaking changes found.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_080",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Alright team, final day of sprint. Confirm status.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "All my tickets are done. Started writing docs for the new webhook system.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I finished the profile edit form! But I’m not sure if I should disable the save button during API calls...",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_1",
+        "text": "Yes, please—prevent double submits. Use the isLoading state from the mutation hook.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Added synthetic monitoring for login flow. Alerts configured.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_5",
+        "text": "Cleaned up old CloudWatch alarms. Reduced noise by 70%.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_081",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I finished the auth middleware refactor. Today I’ll start on the session timeout feature.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m reviewing the PR for the user profile API. Found a few edge cases—will comment shortly.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "CI failed on main last night. Looks like a flaky test in the payment module. I’ll look into it.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_082",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I worked on the DB migration script. Still debugging an index issue.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m blocked on the analytics dashboard—waiting on the new event schema from the data team.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll follow up with data today. In the meantime, you can mock the schema for dev.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_083",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I pushed the fix for the image upload bug. PR’s ready for review.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m still setting up the local dev environment. Got stuck on the Docker config—any tips?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Yeah, I’ll pair with you after stand-up. The docs are outdated; I’ll update them too.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_084",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I deployed the feature flag for dark mode. Today I’ll monitor error rates.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The e2e tests are timing out in staging. I’ll investigate this morning.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_085",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m working on the new notification service. Need help wiring up the Kafka consumer.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I can walk you through it after this. We use a custom deserializer—check the utils folder.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Great. Also, make sure you add metrics for message lag. We’ll track it in Grafana.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_086",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Finished the GraphQL schema changes. Wrote unit tests—coverage is at 92%.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "PR is up for the caching layer. Need two reviews before merging.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll review it—just ping me when CI passes.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_087",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I debugged the race condition in the inventory service. Fixed and deployed to dev.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m integrating the third-party tax API. Docs are unclear—might need to reach out to their support.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Let’s hold off on that until we confirm the cost. I’ll check with finance today.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_088",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m new to the frontend team. Trying to understand how the state management works in this codebase.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "We use Redux Toolkit. There’s a walkthrough in the onboarding repo—check the ‘state’ folder.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "If you’re still stuck by noon, just DM me—we’ll do a quick screen share.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_089",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Spent yesterday optimizing the search query. Latency dropped by 40% in benchmarks.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The CI pipeline is stuck again—looks like the artifact store is full.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll clean it up. DevOps is working on auto-pruning next week.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_090",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I added validation to the signup form. Today I’ll connect it to the backend endpoint.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "PR for the password reset flow is merged. Let me know if you see any issues in QA.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_091",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m trying to write a test for the webhook handler, but I don’t understand how the mock server works.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Use the `test-webhook-server` package—we have an example in the auth service tests.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "And remember to clean up the mock after each test. We had flaky builds because of that.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_092",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I updated dependencies. Had to pin a version because of a breaking change in Axios.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The load test results are in—API holds up to 10k RPM. Memory usage looks good too.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Nice. Let’s document those results in the ADR before we scale further.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_093",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "PR for the new logging format is ready. Need someone to review the JSON structure.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’ll take a look—I’ve been working on log aggregation lately.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Make sure the PII fields are scrubbed. Security flagged that last sprint.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_094",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m working on the mobile sync feature. Ran into an issue with conflict resolution.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "We use vector clocks for that—check the `sync-core` module.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "If you’re still stuck, loop in Alex—they designed that part.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_095",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I fixed the CORS error in the dev environment. It was a proxy config issue.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Good catch. Those configs are tricky—feel free to ask anytime.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Let’s add a test for that config so it doesn’t regress.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_096",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m debugging a memory leak in the worker pod. Heap dump shows a lot of cached sessions.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "We had that before—check if the session TTL is set correctly in Redis.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_097",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "PR for the billing UI is up. Needs design review too—pinged Priya yesterday.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m blocked on the export feature—waiting on the CSV spec from product.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll chase that down right after stand-up. Should have it by 11.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_098",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I containerized the legacy script. Today I’ll test it in the sandbox cluster.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’m learning how our CI triggers work. Is there a diagram somewhere?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Check the infra wiki—there’s a Mermaid diagram under ‘CI/CD Flow’.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_099",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "The security scan flagged a medium severity issue in lodash. Updating now.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I merged the feature branch. Smoke test passed in staging.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Let’s hold off on prod deploy until after the all-hands—just in case.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_100",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I’m adding unit tests to the checkout service. Coverage is at 60%—aiming for 80% by EOD.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "PR for the new rate limiter is ready. Uses Redis sliding window—docs included.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Nice. Make sure it’s behind a feature flag so we can toggle it safely.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_101",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I finished the auth middleware refactor. Today I’m wiring up the new user onboarding flow. No blockers.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I was out sick yesterday. Back today—picking up the CI pipeline fixes. The last build failed on linting.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll take a look at that lint config after stand-up. Also, my PR for the notification service is ready for review.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_102",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I worked on the database migration script. Ran into a schema conflict—need help verifying the rollback logic.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I can pair on that after this. Also, the staging deploy succeeded last night.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Great. By the way, the analytics dashboard PR is merged. You should see the new metrics today.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "I’m still stuck on the OAuth callback—getting a 401 in dev. Not sure if it’s config or code.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_5",
+        "text": "Check the .env file—make sure CLIENT_SECRET matches dev. I’ll DM you the right value.",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_103",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I debugged the payment webhook timeout. Turns out it was a DNS issue in the sandbox env.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "Nice. I’ll update the infra doc to reflect that. My task today is adding retry logic to the email service.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_104",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I reviewed two PRs yesterday and wrote tests for the cache invalidation module. Today: performance profiling.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My API rate limiter is ready—PR up. Could use a quick review before demo tomorrow.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m still learning how the feature flag system works. Can someone show me where the toggle config lives?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "It’s in /config/flags.yaml. I’ll walk you through it after stand-up.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_105",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I deployed the logging improvements. Today I’m investigating the memory leak in the worker pod.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The memory leak—check if it’s related to the new Redis client. Saw similar behavior in another service last week.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll grep the logs for Redis connection errors and share findings by noon.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_106",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Finished the user profile UI. Sent to QA. Today working on dark mode toggle.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I merged the accessibility fixes. All a11y tests are passing now.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to set up Storybook locally but getting dependency conflicts. Can someone help?",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Use npm ci instead of install—it’ll respect the lockfile. Ping me if it still fails.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_107",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I fixed the flaky test in the checkout flow. Today: integrating the new fraud detection API.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The fraud API docs aren’t up yet—reach out to the vendor team. They promised it by EOD yesterday.",
+        "role": "manager"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll email them now and CC you.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_108",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Worked on the search indexing bug. Found a race condition—fix is in review.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "My Docker image build is failing on Alpine. Missing a libc package, I think.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "Add libstdc++ to the install step. We hit this last sprint—check the billing service Dockerfile.",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_109",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "Yesterday I completed the SSO integration. Today I’m writing the setup guide for ops.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "The load test results are in—API latency spiked under 10k concurrent users. We need to optimize the DB query.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’ll profile the query and suggest indexes. Should have a PR by tomorrow.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "Great. Let’s aim to cut the release candidate by Friday. Any blockers?",
+        "role": "manager"
+      }
+    ]
+  },
+  {
+    "meeting_id": "scrum_110",
+    "segments": [
+      {
+        "speaker_id": "spk_1",
+        "text": "I was on-call last night—handled an alert about disk pressure on the message queue. Cleared it by restarting the consumer.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_2",
+        "text": "I’ll add disk usage monitoring to the dashboard today. Also, my refactor of the retry logic is done—PR ready.",
+        "role": "other"
+      },
+      {
+        "speaker_id": "spk_3",
+        "text": "I’m trying to understand how the circuit breaker works in the client lib. The docs are outdated.",
+        "role": "junior"
+      },
+      {
+        "speaker_id": "spk_4",
+        "text": "The real logic is in resilience.go—start there. I’ll update the README this afternoon.",
+        "role": "other"
+      }
+    ]
+  }
+
+]
+

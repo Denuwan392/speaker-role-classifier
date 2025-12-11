@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Cache & secrets
+cache/
+.env
+*.key
+*.pkl  # ← Optional: if you don't want trained models public
+*.joblib
+
+# IDE / OS
+.vscode/
+.DS_Store
+__pycache__/
+*.pyc
+
+# Data (optional: remove if you want to share sample data)
+# data/*.csv
+# data/*.json
+
+# Note: Keep models/ if you want others to run inference without retraining
+# If you keep models/, comment out *.pkl above
