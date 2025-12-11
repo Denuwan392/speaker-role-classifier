@@ -112,16 +112,3 @@ MIT License (see `LICENSE` file).
 ---
 
 > 💡 **Note**: This model is designed for **software engineering stand-up meetings**. Performance may vary in other domains.
-
----
-
-### ✅ Next Steps
-
-1. Save this as `README.md` in your **project root** (`se_project/`)
-2. Replace `your-username` in the clone URL with your actual GitHub username
-3. Commit and push:
-   ```bash
-   git add README.md
-   git commit -m "docs: add comprehensive README"
-   git push
-   ```
