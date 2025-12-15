@@ -1,0 +1,10 @@
+artifact_location: file:///Users/denuwanwijesinghe/Documents/BSc. Artficial Intellligence/se_project/role_detection/mlruns/603949218934757692/models/m-5940d153693247f585da70246fa520a2/artifacts
+creation_timestamp: 1765824457858
+experiment_id: '603949218934757692'
+last_updated_timestamp: 1765824460178
+model_id: m-5940d153693247f585da70246fa520a2
+model_type: null
+name: xgboost_model
+source_run_id: 8978c21fc0d24c229f3072a97c05e8f8
+status: 2
+status_message: null

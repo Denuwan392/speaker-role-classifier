@@ -1,0 +1,63 @@
+artifact_path: file:///Users/denuwanwijesinghe/Documents/BSc. Artficial Intellligence/se_project/role_detection/mlruns/603949218934757692/models/m-e84cf45d8df94a739ca16e81c030bb06/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-e84cf45d8df94a739ca16e81c030bb06
+model_size_bytes: 1195521
+model_uuid: m-e84cf45d8df94a739ca16e81c030bb06
+prompts: null
+run_id: 6fe60e91ba7844df965d7a25b21eb5c5
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: json_object
+signature:
+  inputs: '[{"type": "long", "name": "word_count", "required": true}, {"type": "double",
+    "name": "avg_sentence_len", "required": true}, {"type": "long", "name": "question_count",
+    "required": true}, {"type": "long", "name": "hard_directive_count", "required":
+    true}, {"type": "long", "name": "soft_help_count", "required": true}, {"type":
+    "long", "name": "directive_count", "required": true}, {"type": "long", "name":
+    "uncertainty_count", "required": true}, {"type": "long", "name": "is_greeting_only",
+    "required": true}, {"type": "double", "name": "sentiment_score", "required": true},
+    {"type": "double", "name": "lm_manager_prob", "required": true}, {"type": "double",
+    "name": "word_count_rel", "required": true}, {"type": "double", "name": "directive_count_rel",
+    "required": true}, {"type": "double", "name": "word_count_share", "required":
+    true}, {"type": "double", "name": "tfidf_0", "required": true}, {"type": "double",
+    "name": "tfidf_1", "required": true}, {"type": "double", "name": "tfidf_2", "required":
+    true}, {"type": "double", "name": "tfidf_3", "required": true}, {"type": "double",
+    "name": "tfidf_4", "required": true}, {"type": "double", "name": "tfidf_5", "required":
+    true}, {"type": "double", "name": "tfidf_6", "required": true}, {"type": "double",
+    "name": "tfidf_7", "required": true}, {"type": "double", "name": "tfidf_8", "required":
+    true}, {"type": "double", "name": "tfidf_9", "required": true}, {"type": "double",
+    "name": "tfidf_10", "required": true}, {"type": "double", "name": "tfidf_11",
+    "required": true}, {"type": "double", "name": "tfidf_12", "required": true}, {"type":
+    "double", "name": "tfidf_13", "required": true}, {"type": "double", "name": "tfidf_14",
+    "required": true}, {"type": "double", "name": "tfidf_15", "required": true}, {"type":
+    "double", "name": "tfidf_16", "required": true}, {"type": "double", "name": "tfidf_17",
+    "required": true}, {"type": "double", "name": "tfidf_18", "required": true}, {"type":
+    "double", "name": "tfidf_19", "required": true}, {"type": "double", "name": "tfidf_20",
+    "required": true}, {"type": "double", "name": "tfidf_21", "required": true}, {"type":
+    "double", "name": "tfidf_22", "required": true}, {"type": "double", "name": "tfidf_23",
+    "required": true}, {"type": "double", "name": "tfidf_24", "required": true}, {"type":
+    "double", "name": "tfidf_25", "required": true}, {"type": "double", "name": "tfidf_26",
+    "required": true}, {"type": "double", "name": "tfidf_27", "required": true}, {"type":
+    "double", "name": "tfidf_28", "required": true}, {"type": "double", "name": "tfidf_29",
+    "required": true}, {"type": "double", "name": "tfidf_30", "required": true}, {"type":
+    "double", "name": "tfidf_31", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-12-15 18:47:43.787431'

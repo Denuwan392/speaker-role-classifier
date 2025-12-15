@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/denuwanwijesinghe/Documents/BSc. Artficial Intellligence/se_project/role_detection/mlruns/603949218934757692/6fe60e91ba7844df965d7a25b21eb5c5/artifacts
+end_time: 1765824466095
+entry_point_name: ''
+experiment_id: '603949218934757692'
+lifecycle_stage: active
+run_id: 6fe60e91ba7844df965d7a25b21eb5c5
+run_name: xgboost_v1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765824462891
+status: 3
+tags: []
+user_id: denuwanwijesinghe
