@@ -1,0 +1,10 @@
+{
+  "manager_f1": 0.8695652173913043,
+  "junior_f1": 0.8695652173913043,
+  "other_f1": 0.9117647058823529,
+  "macro_f1": 0.8836317135549873,
+  "train_samples": 277,
+  "val_samples": 60,
+  "test_samples": 57,
+  "n_classes": 3
+}
