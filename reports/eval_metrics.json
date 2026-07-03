@@ -1,6 +1,22 @@
 {
-  "manager_f1": 0.8695652173913043,
-  "junior_f1": 0.8695652173913043,
-  "other_f1": 0.9117647058823529,
-  "macro_f1": 0.8836317135549873
+    "train_samples": 1332,
+    "val_samples": 169,
+    "test_samples": 171,
+    "baseline_macro_f1": 0.6350539544676932,
+    "tuned_macro_f1": 0.6350539544676932,
+    "improvement": 0.0,
+    "optimized_thresholds": {
+        "hr": 0.4500000000000001,
+        "junior": 0.3500000000000001,
+        "manager": 0.5000000000000001,
+        "other": 0.4500000000000001
+    },
+    "baseline_f1_hr": 0.6111111111111112,
+    "tuned_f1_hr": 0.6111111111111112,
+    "baseline_f1_junior": 0.6352941176470588,
+    "tuned_f1_junior": 0.6352941176470588,
+    "baseline_f1_manager": 0.5555555555555556,
+    "tuned_f1_manager": 0.5555555555555556,
+    "baseline_f1_other": 0.738255033557047,
+    "tuned_f1_other": 0.738255033557047
 }

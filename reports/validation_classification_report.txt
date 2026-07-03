@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+          hr     0.9091    0.6667    0.7692        15
+      junior     0.8333    1.0000    0.9091        15
+     manager     0.6429    0.6000    0.6207        15
+       other     0.7647    0.8667    0.8125        15
+
+    accuracy                         0.7833        60
+   macro avg     0.7875    0.7833    0.7779        60
+weighted avg     0.7875    0.7833    0.7779        60

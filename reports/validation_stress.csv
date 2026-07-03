@@ -1,0 +1,16 @@
+desc,text,true,xgb_pred,xgb_conf,router_pred,router_source,router_conf,proba_hr,proba_junior,proba_manager,proba_other
+One word - greeting,Hello.,other,other,0.9644348621368408,other,XGBoost,0.9644348621368408,0.007939719,0.014005971,0.01361944,0.96443486
+Short sentence,I will check the logs.,other,other,0.7301275134086609,other,Gemini Fallback (Mocked),0.7301275134086609,0.0031891859,0.008195253,0.25848803,0.7301275
+Long paragraph,Yesterday I worked on the database migration scripts and ran...,other,junior,0.5054851174354553,junior,Gemini Fallback (Mocked),0.5054851174354553,0.05885292,0.5054851,0.04353182,0.39213017
+Repeated phrase,I am working on it. I am working on it. I am working on it. ...,other,other,0.8606077432632446,other,XGBoost,0.8606077432632446,0.0018174041,0.10429957,0.033275317,0.86060774
+No punctuation,today I finished the api setup and tomorrow I will write tes...,other,other,0.6469917893409729,other,Gemini Fallback (Mocked),0.6469917893409729,0.011928969,0.2808847,0.060194507,0.6469918
+Questions only,How do I fix this compile error? Is this the right branch? C...,junior,junior,0.6426794528961182,junior,Gemini Fallback (Mocked),0.6426794528961182,0.002545389,0.64267945,0.1912674,0.16350777
+Commands only,Merge the PR. Run the build. Deploy to staging immediately. ...,manager,other,0.8230170607566833,other,XGBoost,0.8230170607566833,0.003549601,0.092967406,0.08046591,0.82301706
+Jargon only,Kafka consumer partitions Kubernetes pod deployment Docker c...,other,hr,0.6227816343307495,hr,Gemini Fallback (Mocked),0.6227816343307495,0.62278163,0.1150726,0.03146113,0.23068461
+HR terminology only,onboarding benefits welfare performance reviews PTO retentio...,hr,manager,0.538259744644165,manager,Gemini Fallback (Mocked),0.538259744644165,0.2123133,0.019223597,0.53825974,0.23020338
+Mixed terminology,Finish the audit by Friday and take care of your work life b...,manager,hr,0.927463710308075,hr,XGBoost,0.927463710308075,0.9274637,0.010563939,0.04339541,0.018576907
+Noise/filler words,"Um, so, yeah, I guess I finished the, like, backend route, a...",other,junior,0.8990970849990845,junior,XGBoost,0.8990970849990845,0.021717636,0.8990971,0.0067481715,0.072437145
+Typos,I finsihed the implmentaton of the api and runned the test c...,other,junior,0.8108377456665039,junior,XGBoost,0.8108377456665039,0.0028491188,0.81083775,0.02231046,0.1640027
+Grammar mistakes,Me and spk_3 is working on the fixes yesterday but it do not...,other,other,0.7672262191772461,other,Gemini Fallback (Mocked),0.7672262191772461,0.14892128,0.06940621,0.014446299,0.7672262
+Extreme technical,Thread dump analysis shows a deadlock in locking resource 0x...,other,other,0.6157208681106567,other,Gemini Fallback (Mocked),0.6157208681106567,0.043997005,0.18139958,0.15888253,0.61572087
+Greeting + brief,"Hi team, today I am updating the configuration files. No blo...",other,other,0.8686213493347168,other,XGBoost,0.8686213493347168,0.009401364,0.019242648,0.102734655,0.86862135

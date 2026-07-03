@@ -1,0 +1,61 @@
+desc,text,true,xgb_pred,xgb_conf,router_pred,router_source,router_conf,proba_hr,proba_junior,proba_manager,proba_other
+,Let's finalize the sprint goals today. I need the backend te...,manager,manager,0.8405417799949646,manager,XGBoost,0.8405417799949646,0.022439191,0.010692273,0.8405418,0.12632677
+,"Good morning team. Let's keep updates brief. spk_2, what is ...",manager,manager,0.9865893125534058,manager,XGBoost,0.9865893125534058,0.008166743,0.0007556875,0.9865893,0.004488189
+,I reviewed your pull request. You must rewrite the auth vali...,manager,other,0.7675899863243103,other,Gemini Fallback (Mocked),0.7675899863243103,0.009463613,0.065495215,0.15745121,0.76759
+,Please make sure everyone logs their PTO in the system. I ex...,manager,other,0.33903127908706665,other,Gemini Fallback (Mocked),0.33903127908706665,0.25780752,0.1267671,0.2763941,0.33903128
+,Welcome to the team! I've assigned spk_3 to be your onboardi...,manager,hr,0.3521724343299866,hr,Gemini Fallback (Mocked),0.3521724343299866,0.35217243,0.052283183,0.2699653,0.32557905
+,"During this quarter, you met your key deliverables. However,...",manager,manager,0.9479279518127441,manager,XGBoost,0.9479279518127441,0.016785998,0.012097537,0.94792795,0.02318845
+,"To prepare for the senior role, you must lead the next syste...",manager,junior,0.3978787362575531,junior,Gemini Fallback (Mocked),0.3978787362575531,0.1092459,0.39787874,0.20000847,0.29286686
+,The production database is down. I need DevOps to roll back ...,manager,manager,0.9521923661231995,manager,XGBoost,0.9521923661231995,0.007068835,0.0033885087,0.95219237,0.03735029
+,We will adopt microservices for the new payment gateway. I e...,manager,other,0.8605809211730957,other,XGBoost,0.8605809211730957,0.0074501997,0.099542834,0.032426074,0.8605809
+,"Excellent work on the release, but we need to address our te...",manager,manager,0.6437110304832458,manager,Gemini Fallback (Mocked),0.6437110304832458,0.09347535,0.05406564,0.64371103,0.20874798
+,We need to speed up the frontend development. I am moving sp...,manager,manager,0.7725580930709839,manager,Gemini Fallback (Mocked),0.7725580930709839,0.014253736,0.011134022,0.7725581,0.20205414
+,All code changes must have at least two approvals. No except...,manager,manager,0.7019109129905701,manager,Gemini Fallback (Mocked),0.7019109129905701,0.026687559,0.045844868,0.7019109,0.22555667
+,We have budget constraints this quarter. We must prioritize ...,manager,manager,0.9238438010215759,manager,XGBoost,0.9238438010215759,0.043072525,0.006597731,0.9238438,0.02648592
+,"If you encounter any blockers with the external API, escalat...",manager,junior,0.8250331878662109,junior,XGBoost,0.8250331878662109,0.022413528,0.8250332,0.024891714,0.12766163
+,Our focus for the next half is security compliance. We must ...,manager,manager,0.5606448650360107,manager,Gemini Fallback (Mocked),0.5606448650360107,0.18039471,0.028499216,0.56064487,0.23046118
+,Please remember to complete your self-evaluations in the HR ...,hr,hr,0.7789416313171387,hr,Gemini Fallback (Mocked),0.7789416313171387,0.77894163,0.013704091,0.19536756,0.011986682
+,Welcome to the company! Please complete the compliance train...,hr,manager,0.5894426107406616,manager,Gemini Fallback (Mocked),0.5894426107406616,0.23240137,0.05884654,0.5894426,0.1193095
+,"If you are feeling overwhelmed, remember that we offer free ...",hr,hr,0.8968935608863831,hr,XGBoost,0.8968935608863831,0.89689356,0.031183701,0.04977629,0.022146411
+,I wanted to check in on how you're settling into the new rol...,hr,manager,0.9495067000389099,manager,XGBoost,0.9495067000389099,0.026032403,0.0037614792,0.9495067,0.020699412
+,Our career progression framework outlines the competencies r...,hr,hr,0.8432542681694031,hr,XGBoost,0.8432542681694031,0.84325427,0.044949714,0.09260441,0.019191636
+,Just a reminder that the company-wide holiday calendar is up...,hr,hr,0.7034975290298462,hr,Gemini Fallback (Mocked),0.7034975290298462,0.7034975,0.024428234,0.20844825,0.063626006
+,You can view your health insurance details and dental covera...,hr,hr,0.9593216776847839,hr,XGBoost,0.9593216776847839,0.9593217,0.009362968,0.024311222,0.007004097
+,If you experience any issues with team dynamics or feel unco...,hr,hr,0.4986785054206848,hr,Gemini Fallback (Mocked),0.4986785054206848,0.4986785,0.009017681,0.4846574,0.007646472
+,We are actively sourcing candidates for the open Senior Dev ...,hr,hr,0.4569014310836792,hr,Gemini Fallback (Mocked),0.4569014310836792,0.45690143,0.25295347,0.20853262,0.08161251
+,Our annual employee engagement survey is now open. We want t...,hr,hr,0.9913314580917358,hr,XGBoost,0.9913314580917358,0.99133146,0.0010648759,0.004870152,0.0027335053
+,We are launching a new leadership training program next mont...,hr,hr,0.558771014213562,hr,Gemini Fallback (Mocked),0.558771014213562,0.558771,0.22015913,0.092355594,0.1287143
+,The new remote work guidelines have been posted on the intra...,hr,other,0.6193616390228271,other,Gemini Fallback (Mocked),0.6193616390228271,0.09857069,0.07254186,0.20952581,0.61936164
+,Let's plan a team building event for next month. I'd love to...,hr,manager,0.7220941185951233,manager,Gemini Fallback (Mocked),0.7220941185951233,0.2039084,0.012550621,0.7220941,0.061446846
+,We are conducting a routine audit of employee training recor...,hr,manager,0.49821048974990845,manager,Gemini Fallback (Mocked),0.49821048974990845,0.3647884,0.03728436,0.4982105,0.09971673
+,Thank you for sharing your feedback during the exit intervie...,hr,hr,0.8877025246620178,hr,XGBoost,0.8877025246620178,0.8877025,0.055038452,0.032415777,0.024843246
+,I'm not sure if I can finish the user profile tasks by Thurs...,junior,junior,0.9953821301460266,junior,XGBoost,0.9953821301460266,0.0005884581,0.99538213,0.0006341894,0.0033951995
+,I got stuck on the Docker setup yesterday. I think it is an ...,junior,junior,0.9798299074172974,junior,XGBoost,0.9798299074172974,0.00031931585,0.9798299,0.008059918,0.011790864
+,"I am trying to implement the callback function, but I am con...",junior,junior,0.9945376515388489,junior,XGBoost,0.9945376515388489,0.0022691637,0.99453765,0.0015354925,0.0016576464
+,I don't quite understand how the authentication middleware w...,junior,junior,0.9906907081604004,junior,XGBoost,0.9906907081604004,0.0006585336,0.9906907,0.0034328422,0.00521791
+,"I am trying to run the setup script, but it keeps failing wi...",junior,junior,0.9959546327590942,junior,XGBoost,0.9959546327590942,0.00021818886,0.99595463,0.00072414265,0.0031030816
+,I want to improve my testing skills. I think I need help set...,junior,junior,0.9031552672386169,junior,XGBoost,0.9031552672386169,0.0016224732,0.90315527,0.014635992,0.08058631
+,I'm having trouble with the CSS layout. The flexbox alignmen...,junior,junior,0.942742109298706,junior,XGBoost,0.942742109298706,0.0010602187,0.9427421,0.012550903,0.043646727
+,I think I accidentally broke the staging build. The CI pipel...,junior,junior,0.8554016947746277,junior,XGBoost,0.8554016947746277,0.0011074614,0.8554017,0.021939313,0.12155149
+,I spent all day yesterday trying to set up the mock server. ...,junior,junior,0.9417658448219299,junior,XGBoost,0.9417658448219299,0.0007471357,0.94176584,0.0089259455,0.04856109
+,I am confused about where to add the validation logic. Shoul...,junior,junior,0.9808310866355896,junior,XGBoost,0.9808310866355896,0.0002056964,0.9808311,0.011839082,0.007124077
+,I'm not sure what this error message means: 'Connection refu...,junior,junior,0.989188551902771,junior,XGBoost,0.989188551902771,0.00069686474,0.98918855,0.00091743417,0.009197066
+,"I managed to fix the simple bug, but I'm still struggling wi...",junior,junior,0.9929333925247192,junior,XGBoost,0.9929333925247192,0.0015842678,0.9929334,0.0009120175,0.004570288
+,I have a merge conflict on my branch and I'm scared of losin...,junior,junior,0.9931372404098511,junior,XGBoost,0.9931372404098511,0.00062115246,0.99313724,0.0014346451,0.004807004
+,My IDE isn't showing any autocomplete for the library. I'm t...,junior,junior,0.9637569785118103,junior,XGBoost,0.9637569785118103,0.0005701302,0.963757,0.0026281995,0.03304477
+,How do we handle error logging in this service? I see some f...,junior,junior,0.742323637008667,junior,Gemini Fallback (Mocked),0.742323637008667,0.0016216519,0.74232364,0.050956596,0.20509814
+,Yesterday I completed the dashboard UI changes. Today I am g...,other,other,0.9405537247657776,other,XGBoost,0.9405537247657776,0.006448925,0.03539529,0.017602054,0.9405537
+,I've updated the JIRA ticket with my latest findings on the ...,other,other,0.6239160299301147,other,Gemini Fallback (Mocked),0.6239160299301147,0.005031497,0.3635108,0.007541652,0.62391603
+,Nice work on this class design. The code looks clean and rea...,other,other,0.49598145484924316,other,Gemini Fallback (Mocked),0.49598145484924316,0.008823269,0.40336534,0.09182994,0.49598145
+,The data flow goes from the event queue into the processor s...,other,other,0.4499157965183258,other,Gemini Fallback (Mocked),0.4499157965183258,0.023690753,0.44973326,0.07666023,0.4499158
+,"To scale the ingestion layer, we partition the Kafka topic b...",other,other,0.7799498438835144,other,Gemini Fallback (Mocked),0.7799498438835144,0.020517623,0.06659856,0.13293393,0.77994984
+,The API gateway deployment is complete. All health checks ar...,other,other,0.5484020709991455,other,Gemini Fallback (Mocked),0.5484020709991455,0.0068998057,0.366239,0.0784591,0.5484021
+,I chatted with spk_1 about the schema changes. We agreed to ...,other,junior,0.4789141118526459,junior,Gemini Fallback (Mocked),0.4789141118526459,0.014599363,0.4789141,0.036668982,0.46981752
+,I've merged the main branch into my feature branch and resol...,other,other,0.8196161985397339,other,XGBoost,0.8196161985397339,0.0055585373,0.14630619,0.028519062,0.8196162
+,I ran the dependency check scan and updated the packages wit...,other,other,0.7550353407859802,other,Gemini Fallback (Mocked),0.7550353407859802,0.015653959,0.16867052,0.060640216,0.75503534
+,We should look into upgrading to the latest version of Pytho...,other,other,0.6076221466064453,other,Gemini Fallback (Mocked),0.6076221466064453,0.0076835398,0.26529533,0.11939895,0.60762215
+,Adding an index on the email column reduced the login query ...,other,other,0.5693647265434265,other,Gemini Fallback (Mocked),0.5693647265434265,0.022431046,0.3618994,0.046304766,0.5693647
+,Today I am writing the integration tests for the shopping ca...,other,other,0.9522887468338013,other,XGBoost,0.9522887468338013,0.00161889,0.02904365,0.017048743,0.95228875
+,"I refactored the legacy module to use class inheritance, whi...",other,other,0.927991509437561,other,XGBoost,0.927991509437561,0.0009717271,0.026572345,0.044464413,0.9279915
+,I've updated the README with the local setup instructions fo...,other,manager,0.7918945550918579,manager,Gemini Fallback (Mocked),0.7918945550918579,0.017436162,0.018355992,0.79189456,0.17231324
+,The webpack config has been updated to enable tree shaking. ...,other,other,0.8922285437583923,other,XGBoost,0.8922285437583923,0.006062194,0.04564027,0.05606894,0.89222854

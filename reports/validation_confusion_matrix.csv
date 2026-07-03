@@ -1,0 +1,5 @@
+,pred_hr,pred_junior,pred_manager,pred_other
+true_hr,10,0,4,1
+true_junior,0,15,0,0
+true_manager,1,2,9,3
+true_other,0,1,1,13
