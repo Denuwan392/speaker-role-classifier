@@ -1,114 +1,346 @@
 # 🗣️ Speaker Role Classifier
 
-Predicts speaker roles (**manager**, **junior**, or **other**) from **diarized meeting transcripts** in software engineering stand-ups. Built with XGBoost, linguistic features, and LLM-enhanced signals.
+An AI-powered **speaker role classification system** for software engineering meetings. The model predicts whether a speaker is acting as a **Manager**, **HR**, **Junior Developer**, or **Other** based solely on their spoken utterances.
 
-![Example Output](https://img.shields.io/badge/Output-Manager_Junior_Other-blue)
+Built using **XGBoost**, handcrafted linguistic features, **TF-IDF + TruncatedSVD semantic representations**, and a modular production-ready inference pipeline.
 
-## ✨ Features
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![XGBoost](https://img.shields.io/badge/XGBoost-Multi--Class-green)
+![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Demo-red)
 
-- **Accurate role detection**: F1 > 0.87 on real-world-like data
-- **Evidence extraction**: Highlights the key sentence that influenced the prediction
-- **Calibrated probabilities**: Reliable confidence scores (e.g., `0.93`)
-- **LLM-enhanced**: Uses cached Groq/Llama-3 scores for semantic nuance
-- **Interactive demo**: Streamlit UI for real-time testing
-- **Production-ready**: Modular, tested, and documented
+---
 
-## 🚀 Quick Start
+# ✨ Features
 
-### 1. Clone the repo
+- 🎯 Multi-class speaker role classification
+  - Manager
+  - HR
+  - Junior Developer
+  - Other
+
+- 🧠 Modular feature engineering pipeline
+
+- 📊 40-dimensional feature representation
+  - 8 handcrafted linguistic features
+  - 32 TF-IDF + TruncatedSVD semantic features
+
+- ⚡ Production-ready inference pipeline
+
+- 📈 MLflow experiment tracking
+
+- 📋 Automatic evaluation reports
+
+- 🔍 Evidence sentence extraction
+
+- 📊 Interactive Streamlit testing dashboard
+
+- 📁 Fully modular training pipeline
+
+---
+
+# 🚀 Quick Start
+
+## 1. Clone Repository
+
 ```bash
-git clone https://github.com/your-username/speaker-role-classifier.git
+git clone https://github.com/Denuwan392/speaker-role-classifier.git
 cd speaker-role-classifier
 ```
 
-### 2. Set up environment
+---
+
+## 2. Create Virtual Environment
+
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-# .venv\Scripts\activate   # Windows
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
 ```
 
-### 3. Install dependencies
+---
+
+## 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. (Optional) Set Groq API key for LLM features
-```bash
-echo "GROQ_API_KEY=your_api_key_here" > .env
-```
-> 💡 The model works without it (uses cached scores), but new texts will default to 0.5.
+---
 
-### 5. Run the Streamlit demo
-```bash
-streamlit run role_detection/app.py
-```
-Then open the URL shown (usually `http://localhost:8501`).
+## 4. Launch Interactive Demo
 
-### 6. Or use the API directly
+```bash
+streamlit run app.py
+```
+
+Open
+
+```
+http://localhost:8501
+```
+
+---
+
+## 5. Run Standalone Inference
+
+```bash
+python inference.py
+```
+
+---
+
+## 6. Train Model
+
+```bash
+python train_pipeline.py
+```
+
+---
+
+## 7. Launch MLflow Dashboard
+
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+```
+
+Open
+
+```
+http://localhost:5000
+```
+
+---
+
+# Example Usage
+
 ```python
-from role_detection.predict_role import predict_role
+from predict_role import predict_role
 
 segments = [
-    {"speaker_id": "spk_1", "text": "What did you do yesterday?"},
-    {"speaker_id": "spk_2", "text": "I'm stuck on the test case..."},
+    {
+        "speaker_id": "spk_1",
+        "text": "Please complete the API implementation before Friday."
+    },
+    {
+        "speaker_id": "spk_2",
+        "text": "I'm still trying to understand OAuth."
+    }
 ]
 
-result = predict_role(segments)
-print(result)
+results = predict_role(segments)
+
+print(results)
 ```
 
-## 📂 Project Structure
+---
 
-```
-role_detection/
-├── predict_role.py          # Core inference function (main export)
-├── demo.py                  # CLI example
-├── app.py                   # Streamlit UI
-├── models/                  # Trained model artifacts (.pkl, .joblib)
-├── cache/                   # LLM response cache (auto-generated)
-├── data/                    # Sample datasets (labeled_roles.csv, features.csv)
-├── 01_eda.ipynb             # Exploratory data analysis
-├── 02_feature_engineering.ipynb
-├── 03_model_training.ipynb
-└── ...
-requirements.txt            # Python dependencies
-.env.example                # Environment template
-```
-
-## 📊 Sample Output
+# Example Output
 
 ```json
 {
   "spk_1": {
     "role": "manager",
-    "probability": 0.994,
-    "evidence": ["Morning everyone. Let’s keep it quick—what did you do yesterday?"]
-  },
-  "spk_2": {
-    "role": "junior",
-    "probability": 0.69,
-    "evidence": ["I’m not sure where the doc files live—can someone point me?"]
+    "probability": 0.98,
+    "probs": {
+      "manager": 0.98,
+      "junior": 0.01,
+      "hr": 0.00,
+      "other": 0.01
+    },
+    "evidence": [
+      "Please complete the API implementation before Friday."
+    ]
   }
 }
 ```
 
-## 🧠 How It Works
+---
 
-1. **Aggregates** all turns by `speaker_id`
-2. **Extracts 48+ features** per speaker:
-   - Linguistic: directives, uncertainty, questions
-   - Relative: word share, speaking dominance
-   - Semantic: TF-IDF + LLM score (via Groq)
-3. **Predicts role** using a calibrated XGBoost classifier
-4. **Returns evidence** (most indicative sentence)
+# Model Pipeline
 
-Trained on **394 speaker samples** from realistic daily scrums.
-
-## 📜 License
-
-MIT License (see `LICENSE` file).
+```
+Diarized Transcript
+        │
+        ▼
+Speaker Aggregation
+        │
+        ▼
+RoleFeatureExtractor
+        │
+        ├───────────────┐
+        │               │
+        ▼               ▼
+Handcrafted      TF-IDF Vectorizer
+ Features              │
+        │              ▼
+        │        Truncated SVD
+        └───────┬──────────────
+                ▼
+      40-Dimensional Feature Vector
+                │
+                ▼
+        XGBoost Classifier
+                │
+                ▼
+ Role Prediction + Confidence
+                │
+                ▼
+ Evidence Sentence Extraction
+```
 
 ---
 
-> 💡 **Note**: This model is designed for **software engineering stand-up meetings**. Performance may vary in other domains.
+# Feature Engineering
+
+The model generates a **40-dimensional feature vector** for every speaker.
+
+### Handcrafted Features (8)
+
+- Word Count
+- Average Sentence Length
+- Question Count
+- Hard Directive Count
+- Soft Directive Count
+- Uncertainty Count
+- HR Keyword Count
+- Greeting Count
+
+### Semantic Features (32)
+
+- TF-IDF Vectorization
+- TruncatedSVD Dimensionality Reduction
+
+The exact same feature pipeline is shared between training and inference through the reusable **RoleFeatureExtractor**.
+
+---
+
+# Training Pipeline
+
+The project includes a fully automated training workflow.
+
+## Dataset Processing
+
+- Feature preprocessing
+- Label encoding
+- Missing value handling
+
+## Dataset Split
+
+- Group-aware Train / Validation / Test split
+- Meeting-level separation
+- 70 / 15 / 15 ratio
+
+## Class Imbalance
+
+SMOTE oversampling is applied only to the training set.
+
+## Model
+
+- XGBoost Multi-Class Classifier
+
+Training includes:
+
+- Early stopping
+- Validation monitoring
+- Automatic model serialization
+- MLflow experiment tracking
+- Evaluation report generation
+
+---
+
+# Evaluation
+
+The pipeline automatically produces:
+
+- Classification Report
+- Macro F1 Score
+- Confusion Matrix
+- Class-wise Metrics
+- Validation Reports
+- SHAP Feature Importance
+- Stress Testing Results
+- Calibration Statistics
+
+All outputs are stored inside the **reports/** directory.
+
+---
+
+# Project Structure
+
+```
+speaker-role-classifier/
+
+│
+├── app.py
+├── predict_role.py
+├── inference.py
+├── train_pipeline.py
+├── feature_pipeline.py
+├── agentic_router.py
+│
+├── models/
+│   ├── role_classifier.pkl
+│   ├── label_encoder.pkl
+│   └── tfidf_svd.joblib
+│
+├── reports/
+│
+├── data/
+│
+├── notebook/
+│
+├── mlflow.db
+│
+└── requirements.txt
+```
+
+---
+
+# Technologies Used
+
+- Python
+- XGBoost
+- Scikit-learn
+- Pandas
+- NumPy
+- MLflow
+- Streamlit
+- Joblib
+- TF-IDF
+- TruncatedSVD
+- imbalanced-learn (SMOTE)
+
+---
+
+# Future Improvements
+
+- Probability Calibration
+- Sentence Transformer Embeddings
+- Context-aware Multi-turn Classification
+- Incremental Model Updating
+- Larger Multi-domain Dataset
+- SpeechInSight Pipeline Integration
+
+---
+
+# License
+
+MIT License
+
+---
+
+## Author
+
+**Darshana Denuwan Wijesinghe**
+
+BSc (Hons) Artificial Intelligence  
+University of Moratuwa
+
+---
+
+> This repository contains the standalone Speaker Role Classification module developed for the SpeechInSight project. It is designed to integrate into larger speech analytics pipelines while remaining independently trainable and deployable.
