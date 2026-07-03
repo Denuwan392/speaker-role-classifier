@@ -23,3 +23,9 @@ __pycache__/
 
 # Note: Keep models/ if you want others to run inference without retraining
 # If you keep models/, comment out *.pkl above
+
+
+mlruns/
+mlflow.db
+__pycache__/
+venv/
