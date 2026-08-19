@@ -1,0 +1,4 @@
+Dataset_Version,Evaluation_Type,Accuracy,Macro_F1,Leader_Identification_Accuracy,Data_Leakage
+Dataset B (4-Class 1133 samples),20-Seed Multi-Split Mean ± Std,0.6945 ± 0.0370,0.6814 ± 0.0317,0.7186 ± 0.0666,NO (Train-only TF-IDF/SVD)
+Dataset B (4-Class 1133 samples),Seed 0 Single Split (Clean),0.6364,0.6317,0.6250,NO (Train-only TF-IDF/SVD)
+Dataset A (3-Class 394 samples),Clean Split (Seed 42),0.8596,0.8446,0.8000,NO (HR Omitted)

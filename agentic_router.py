@@ -32,7 +32,11 @@ class HybridRoleRouter:
         
         # Initialize Gemini LLM using the modern SDK
         # Assumes GOOGLE_API_KEY environment variable is configured in the terminal
-        self.client = genai.Client()
+        try:
+            self.client = genai.Client()
+        except Exception as e:
+            warnings.warn(f"Gemini Client initialization skipped ({e}). LLM fallback will be disabled.")
+            self.client = None
 
     def predict(self, features: np.ndarray, raw_text: str) -> Tuple[str, str, float]:
         """
@@ -56,17 +60,19 @@ class HybridRoleRouter:
         """
         Trigger Gemini fallback for classification.
         """
+        if self.client is None:
+            return (default_role, "XGBoost (LLM Unavailable)", xgb_confidence)
         system_prompt = (
             "You are a sociolinguist expert. Your task is to classify the speaker's role based on their "
             "conversational dominance, process-oriented language, or uncertainty.\n"
-            "The available roles are: Lead, HR, Junior, Other.\n\n"
+            "The available roles are: manager, hr, junior, other.\n\n"
             "Roles Definitions:\n"
-            "- Lead: Takes charge, gives hard directives, sets deadlines.\n"
-            "- HR: Focuses on process, well-being, generic facilitation.\n"
-            "- Junior: Shows uncertainty, asks for help, mentions being stuck.\n"
-            "- Other: General contributions, small talk, etc.\n\n"
+            "- manager: Takes charge, gives hard directives, sets deadlines.\n"
+            "- hr: Focuses on process, well-being, generic facilitation.\n"
+            "- junior: Shows uncertainty, asks for help, mentions being stuck.\n"
+            "- other: General contributions, small talk, etc.\n\n"
             "Analyze the following raw text from a meeting transcript and classify it into EXACTLY ONE of the four roles. "
-            "Respond ONLY with the role name (e.g., Lead) and nothing else."
+            "Respond ONLY with the role name (e.g., manager) and nothing else."
         )
         
         prompt = f"{system_prompt}\n\nRaw Text:\n\"{raw_text}\"\n\nRole:"
@@ -80,14 +86,14 @@ class HybridRoleRouter:
             llm_response = response.text.strip().lower()
             
             # Robustly parse the response
-            if "lead" in llm_response:
-                llm_role = "Lead"
+            if "manager" in llm_response or "lead" in llm_response:
+                llm_role = "manager"
             elif "hr" in llm_response:
-                llm_role = "HR"
+                llm_role = "hr"
             elif "junior" in llm_response:
-                llm_role = "Junior"
+                llm_role = "junior"
             elif "other" in llm_response:
-                llm_role = "Other"
+                llm_role = "other"
             else:
                 # If the LLM generates something unexpected, use the default (best XGboost)
                 llm_role = default_role

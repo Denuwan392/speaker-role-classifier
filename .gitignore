@@ -29,3 +29,6 @@ mlruns/
 mlflow.db
 __pycache__/
 venv/
+
+# LaTeX reports (excluded from git)
+latex/
